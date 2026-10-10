@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PNSQC - MCP Self-Healing Demo</title>
+    <style>
+        body { font-family: sans-serif; padding: 40px; text-align: center; background: #f9f9f9; }
+        .btn { padding: 12px 24px; font-size: 16px; cursor: pointer; border-radius: 4px; border: none; font-weight: bold; transition: all 0.2s; }
+        
+        /* Interactive styles for our demo transition states */
+        .legacy-click-handler { background-color: #007bff; color: white; }
+        .active-mcp-target { background-color: #28a745; color: white; }
+        
+        #status { margin-top: 25px; font-size: 18px; font-weight: bold; color: #2b8a3e; min-height: 24px; }
+    </style>
+</head>
+<body>
+    <h1>PNSQC Automation Hub</h1>
+    <p>Simulate a live production refactor to test autonomous self-healing capabilities.</p>
+    
+    <button id="submit-btn" class="btn legacy-click-handler" onclick="document.getElementById('status').innerText = 'QA Audit Passed!'">
+       Execute Verified Audit
+    </button>
+    
+    <div id="status"></div>
+</body>
+</html>

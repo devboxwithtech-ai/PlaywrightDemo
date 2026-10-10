@@ -1,0 +1,8 @@
+axe violations: [
+  'button-name',
+  'color-contrast',
+  'frame-title',
+  'heading-order',
+  'image-alt',
+  'region'
+]
